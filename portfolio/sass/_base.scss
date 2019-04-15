@@ -1,0 +1,67 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+$deepskyblue: #00BFFF;
+$steelblue: #4682B4;
+$dodgerblue: #1E90FF;
+$royalblue: #4169E1;
+$mediumblue: #01011b;
+$darkslategray: #2F4F4F;
+$rosybrown: #BC8F8F;
+$bisque: #FFE4C4;
+
+$goldenrod: #DAA520;
+
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary; 
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 6rem calc(100vh - 6rem) repeat(7, min-content);
+    grid-template-columns: [full-start] minmax(15rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end]  minmax(15rem,1fr) [full-end];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

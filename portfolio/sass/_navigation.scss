@@ -1,0 +1,28 @@
+.navigation {
+  background-color: $mediumblue;
+  grid-column: full-start / full-end;
+  font-size: 2rem;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav {
+    animation-iteration-count: 2;
+    &__items {
+        display: inline-block;
+        list-style: none;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+    &__links:link,
+    &__links:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Monoton', cursive;
+        outline: none;
+    }
+}

@@ -1,0 +1,58 @@
+.testimonials {
+    padding: 8rem;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/about_me2.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-rows: 10rem min-content;
+    .heading-2--light {
+        align-self: start;
+        justify-self: center;
+        font-family: 'Noto Serif SC', serif;
+        text-transform: uppercase;
+    }
+    &__people {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+        grid-gap: 2rem;
+        justify-items: center;
+    }
+    &__person {
+        display: grid;
+        grid-row-gap: 1.5rem;
+        align-self: center;
+        justify-items: center;
+    }
+    &__text {
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: $color-grey-light-1;
+        font-size: 1.9rem;
+        font-weight: 300;
+        justify-self: center;
+        padding: 1rem;
+        &::before {
+            content:"\201C";
+            font-size: 5rem;
+            // left: 1rem;
+        }
+    }
+    &__picture {
+        display: flex;
+        
+    }
+    &__img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    &__name {
+        align-self: center;
+        justify-self: center;
+        color: $color-grey-light-2;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}

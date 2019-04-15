@@ -1,0 +1,87 @@
+.contact {
+    padding: 10rem;
+    background-color: pink;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-rows: 8rem max-content;
+    &__heading {
+        align-self: start;
+        justify-self: center;
+    }
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        align-items: center;
+    }
+    &__left {
+        display: grid;
+        grid-template-rows: 6rem repeat(2, 4rem) max-content;
+        justify-items: center;
+        &-email,
+        &-phone {
+            font-size: 1.9rem;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        &-email {
+            align-self: center;
+        }
+        &-social {
+            display: flex;
+        }
+        &-item {
+            list-style: none;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+        &-link:link,
+        &-link:visited {
+            font-size: 3rem;
+            color: $royalblue;
+            transition: all .3s;
+        }
+        &-link:hover,
+        &-link:active {
+            color: $dodgerblue;
+            transform: translateY(-5px);
+        }
+    }
+    &__right {
+        padding: 3rem;
+        .form {
+            display: grid;
+            grid-row-gap: 1.5rem;
+            & > *:focus {
+                outline: none;
+                color: $color-grey-dark-2;
+            }
+            &__name,
+            &__email {
+                padding: 3px 6px;
+            }
+            &__comment {
+                padding: 5px;
+            }
+            &__submit {
+                text-transform: uppercase;
+                justify-self: center;
+                padding: 8px 20px;
+                border-radius: 2rem;
+                border: none;
+                outline: none;
+                background-color: $dodgerblue;
+                color: $color-grey-light-1;
+                font-size: 1.5rem;
+                transition: all .3s;
+                &:hover {
+                    background-color: $royalblue;
+                    cursor: pointer;
+                    transform: translateY(-5px);
+                }
+            }
+            &__submit:hover &__submit::before{
+                box-shadow: 2px 3px 3px rgba(0,0,0,0.9);
+            }
+        }
+    }
+}

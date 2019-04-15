@@ -1,0 +1,56 @@
+
+.skills {
+    padding: 12rem 0;
+    margin-top: -12vh;
+    background-color: $color-grey-light-1;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-row: 6rem min-content;
+    justify-items: center;
+    
+    &__heading {
+        text-transform: uppercase;
+    }
+}
+
+.skill {
+    width: 50%;
+    
+    &__items {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 0 auto;
+        justify-items: center;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        span {
+            font-style: italic;
+        }
+    }
+    &__progress {
+        max-width: 90rem;
+        height: 2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        background-color: $color-grey-dark-2;
+        z-index: 1;
+        .html, .css, .bootstrap, .js, .jquery, .nodejs, .expressjs, .mongodb {
+            position: relative;
+            height: 2rem;
+            background-color: $goldenrod;
+            z-index: 20;
+        }
+        .html {width: 80%;}
+        .css {width: 80%;}
+        .bootstrap {width: 70%;}
+        .js {width: 70%;}
+        .juqery {width: 60%;}
+        .nodejs {width: 50%;}
+        .expressjs {width: 40%;}
+        .mongodb {width: 50%;}
+    }
+    &__back {
+
+    }
+}
